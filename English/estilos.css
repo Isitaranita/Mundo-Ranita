@@ -1,0 +1,109 @@
+* {
+	transition: all .2s;
+    font-family: cursive;
+}
+
+body {
+    background-color: #bcf78f;
+}
+#juegoMedia {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#ahorcado {
+    height: 200px;
+    width: 200px;
+}
+#ranita {
+    height: 100px;
+    position: relative;
+    border-radius: 25px;
+}
+#life, #lifeCount {
+    color: #09630a;
+}
+@keyframes ranitaAtaque {
+  0%   {left:0px;}
+  50%  {left:-50px;}
+  100% {left:0px;}
+}
+
+@keyframes ranitaSayayin {
+  0%   { transform: translate(0,0) scale(1); filter: brightness(100%) blur(0); }
+  10%  { transform: translate(15px,-10px) scale(1.1); filter: brightness(125%) blur(1px); }
+  20%  { transform: translate(-15px,10px) scale(1.15); filter: brightness(150%) blur(2px); }
+  30%  { transform: translate(10px,-15px) scale(1.2); filter: brightness(175%) blur(3px); }
+  40%  { transform: translate(-10px,15px) scale(1.25); filter: brightness(200%) blur(4px); }
+  50%  { transform: translate(10px,-10px) scale(1.3); filter: brightness(225%) blur(5px); }
+  60%  { transform: translate(-10px,10px) scale(1.25); filter: brightness(250%) blur(6px); }
+  70%  { transform: translate(5px,-5px) scale(1.2); filter: brightness(250%) blur(4px); }
+  80%  { transform: translate(-5px,5px) scale(1.15); filter: brightness(225%) blur(3px); }
+  90%  { transform: translate(0,0) scale(1.1); filter: brightness(200%) blur(2px); }
+  100% { transform: translate(0,0) scale(1); filter: brightness(100%) blur(0); }
+}
+
+@keyframes ranitaFeliz {
+  0%   {top:0px;}
+  50%  {top:-25px;}
+  100% {top:0px;}
+}
+
+@keyframes ranitaReFeliz {
+  0%   {left:0px; top:0px;}
+  25%  {left:10px; top:0px;}
+  50%  {left:0px; top:10px;}
+  75%  {left:-10px; top:-10px;}
+  100% {left:0px; top:0px;}
+}
+
+#spaces, #confirmar {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    color: #09630a;
+}
+
+#teclado {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 550px;
+	margin: auto;
+	gap: 5px;
+    align-content: center;
+}
+
+div div {
+	background-color: #46c748;
+    color: #e6ffdd;
+	padding: 1%;
+	height: 50px;
+	width: 40px;
+	text-align: center;
+	border-radius: 25px;
+}
+div div h2 {
+    align-content: center;
+}
+div div:hover {
+	height: 70px;
+	width: 50px;
+}
+#play {
+    background-color: #46c748;
+    color: #e6ffdd;
+    padding: 5px;
+    width: 120px;
+    height: 20%;
+    border-radius: 25px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+}
+
+#play:hover {
+    transform: scale(1.2);
+}
